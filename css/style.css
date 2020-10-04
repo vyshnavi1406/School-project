@@ -1,0 +1,574 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto,
+        Arial,
+        sans-serif;
+    letter-spacing: 0;
+    background-color: #e9e9e9;
+}
+
+#headerBlock {
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+    /* position: fixed; */
+}
+
+#headerBlock article {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+}
+/*#headerBlock {
+    background:#fff;
+}*/
+.leftHeader {
+    
+    width:50%;
+    float:left;
+}
+.rightHeader {
+    
+    width:50%;
+    float:left;
+}
+#headerBlock article .leftHeader {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerBlock article .rightHeader {
+    flex-basis: 30%;
+}
+
+.logo {
+    flex-basis: 50%;
+}
+
+
+.main_logo_block img {
+    width: 75px;
+}
+
+.plus_logo img {
+    width: 30px;
+}
+
+.logo a {
+    display: block;
+    text-decoration: none;
+    line-height: 10px;
+    color: #f0f0f0;
+}
+
+.plus {
+    color: #ffe500;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.explore {
+    color: #f0f0f0;
+
+}
+
+.plus_logo_block:hover {
+    text-decoration: underline;
+}
+
+
+
+/*------------right menu css starts here ---*/
+.rightHeader nav>ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightHeader nav>ul>li>a {
+    padding: 26px 15px 18px 33px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rightHeader nav ul>li:nth-child(1) a.first-child {
+    background: #fff;
+    color: #2874f0;
+    padding: 6px 40px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 0px #11111140;
+}
+
+.rightHeader svg {
+    transform: rotate(270deg);
+    margin: 0px 4px;
+}
+
+/*-----flipkart dropdown menu -----------*/
+.first-child {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 260px;
+    margin: 7px 0;
+    left: -76px;
+    z-index:1;
+}
+
+.dropdown .nav-item .nav-link {
+    padding: 10px 20px !important;
+
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .5s ease;
+}
+
+.customer_links {
+    display: flex;
+}
+
+.customer_links span {
+    flex: 1;
+}
+
+.customer_links span a.customer {
+    color: #111;
+
+}
+
+.customer_links span a.signup {
+    color: #2874f0;
+    text-align: right;
+
+}
+
+ul>li:hover ul {
+    display: flex;
+}
+
+.dropdown li {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+    position: relative;
+    margin: auto;
+}
+
+.dropdownMenu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu span {
+    margin: 0px 15px;
+}
+
+.dropdownMenu span i {
+    color: #2874f0;
+}
+
+span.plus_icon img {
+    width: 14px;
+    filter: invert(1);
+}
+
+.customer_links span a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*-------right menu css ends here ----*/
+
+/*------main menu block css starts here -----*/
+#mainMenuBlock {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#mainMenuBlock article {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#mainMenuBlock ul {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainMenuBlock ul li {
+    flex: 1 auto;
+}
+
+#mainMenuBlock ul li a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+    padding:12px 0;
+}
+
+#mainMenuBlock ul li a:hover {
+    color: #2874f0;
+}
+
+#mainMenuBlock ul li a svg {
+    margin-left: 6px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#mainMenuBlock ul li a svg path {
+    fill: #878787 !important;
+    opacity: 0.5;
+}
+
+
+/*----dropdown mega menu starts here ----*/
+#MegaDropDownMenuBlock {
+    display: flex;
+    background: #fff;
+    height: 84%;
+    width: 1200px;
+    position: absolute;
+    box-shadow: 0px 2px 3px 0px #ccc;
+    margin: 11px 0px;
+    display:none;
+    z-index:1;
+}
+
+#MegaDropDownMenuBlock div {
+    flex-basis: 25%;
+    padding: 20px;
+}
+
+#MegaDropDownMenuBlock div:nth-child(odd) {
+    background: #fff;
+}
+
+#MegaDropDownMenuBlock div:nth-child(even) {
+    background: #fdfbfb;
+}
+
+.megaMenuDiv ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    line-height: 26px;
+}
+
+.megaMenuDiv ul li a {
+    font-size: 13px !important;
+    color: #212121 !important;
+    font-weight: 400 !important;
+}
+
+._1h5QLb a {
+    font-weight: bold !important;
+}
+.nav-item{
+    position: relative;
+}
+
+#mainMenuBlock ul>li:hover #MegaDropDownMenuBlock {
+    display:flex;
+}
+
+#mainMenuBlock ul>li:hover ._3ynUUz {
+  transform:rotate(90deg) !important;
+  -webkit-transform:rotate(90deg);
+}
+
+#mainMenuBlock ul>li:hover ._3ynUUz path  {
+  fill:#2874f0;
+}
+/*-----dropdown menu ends here------*/
+
+
+/*---Welcom to hour School start here--*/
+#WelcomeHeader {
+        background:#fff;
+        height:400px;
+        padding:50px 0;
+        background: url("../images/about-bg.jpg") bottom no-repeat;
+    }
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+    }
+  .leftHeader {
+        width:50%;
+        float:left;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+    #WelcomeHeader .round-circle {
+      border:3px solid #ffffff;
+      border-radius: 50%;
+      justify-content:space-between;
+      justify-content:flex-end;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    .img-raised {
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    }
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    .rounded-circle {
+        border-radius: 50%;
+    }
+    /*.rightHeader {
+        width:50%;
+        float:left;
+    }*/
+    .rightHeader {
+        width:50%;
+        float:left;
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .text-white {
+        color: #fff !important;
+    }
+    .col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .text-primary {
+        color: #ff9600 !important;
+    }
+    .WelcomeHeader h2 {
+        margin-top: 0;
+        margin-bottom:10px;
+    }
+    .WelcomeHeader h4 {
+        margin-bottom:10px;
+        margin-top:8px;
+    }
+    h4 {
+        display: block;
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    h5 {
+        display: block;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+/*---Welcom to hour School start here--*/
+
+    /*---vision mission start here--*/
+    #VisionHeader{
+        height:500px;
+        background-color: #fff;
+        padding:0px 15px
+    }
+    .leftHeader {
+        width:50%;
+        float:left;
+       /* background-color: yellow;*/
+    }
+    .leftHeader .col-md-8 {
+        float:left;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+    .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .rounded-circle {
+        border-radius: 50%;
+    }
+    img {
+        vertical-align: middle;
+        width:250px;
+    }
+    .img-raised {
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    }
+    .col-md-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+.col-md-8 h2{
+    margin-bottom: 10px;
+}
+    .rightHeader {
+        width:50%;
+        float:left;
+       /* background-color:blue;*/
+    }
+    .rightHeader .col-lg-6 .col-md-12{
+        float:left;
+
+    }
+        /*---vision mission ends here--*/
+/*----Olympiad Exams starts here--*/
+#Olympiadlock {
+    background: url("../images/olympiad-bg.jpg");
+    padding:0px 0 30px 0;
+    height:500px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px;
+    justify-content:center !important;
+    margin-top:-120px;
+}
+.text-center {
+    text-align: center !important;
+}
+.col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.img-raised {
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+img {
+    vertical-align: middle;
+    
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.Olympiadlock .image{
+    border: 5px solid #ffffff;
+}
+.image {
+    padding:.25rem;
+    background-color:#fff;
+    border-radius:.25rem;
+    transition: all .2s ease-in-out;
+    max-width:70%;
+    height:auto;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.olympiad h2 {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size:2.5em;
+    display:block;
+    margin-block-start:0.83em;
+    margin-block-end:0.83em;
+    margin-inline-start:0px;
+    margin-inline-end:0px;
+}
+    
+    
+
+.olympiad h2 p{
+    color:#fff;
+}
+/*----Olympiad Exams ends here--*/
+
+/*#headerBlock {
+    background:#fff;
+}*/
+.leftHeader {
+    
+    width:50%;
+    float:left;
+}
+.rightHeader {
+    
+    width:50%;
+    float:left;
+}
+/*.leftHeader .left {
+width:25%;
+background-color:yellow;
+}
+.leftHeader .right {
+    width:75%;
+    background-color:yellow;
+    }*/
